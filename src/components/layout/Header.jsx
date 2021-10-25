@@ -1,8 +1,11 @@
 import React from 'react'
+import Hero from '../ui/Hero';
 
 const Header = () => {
     return ( 
-        <div>Desde el header</div>
+        <>
+            <Hero />
+        </>
      );
 }
  
