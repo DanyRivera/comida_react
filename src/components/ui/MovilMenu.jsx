@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styled from '@emotion/styled';
 import { Contenedor } from './Reutilizable';
+import MenuContext from '../../context/menu/menuContext';
 
 const ContenedorMovilMenu = styled.div`
 
@@ -23,12 +24,16 @@ const ContenidoMovilMenu = styled.div`
 `;
 
 const MovilMenu = () => {
+
+    //Consumir el Context
+    const { mostrarMenu } = useContext(MenuContext);
+
     return (
         <ContenedorMovilMenu>
             <Contenedor>
                 <ContenidoMovilMenu>
                     <button
-                        onClick={() => console.log('Activando sidebar')}
+                        onClick={() => mostrarMenu()}
                     >
                         <i className="fas fa-bars"></i>
                     </button>

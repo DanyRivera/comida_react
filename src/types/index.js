@@ -1,0 +1,2 @@
+export const MOSTRAR_MENU = 'MOSTRAR_MENU';
+export const OCULTAR_MENU = 'OCULTAR_MENU';
