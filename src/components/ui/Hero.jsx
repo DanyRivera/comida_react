@@ -25,14 +25,30 @@ const ContenedorHero = styled.div`
         background-color: rgba(0,0,0, .6);
         position: absolute;
     }
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
+        justify-content: center;
+        color: var(--primario);
+        font-size: 5rem;
+        position: absolute;
+        z-index: 1;
+    }
 `;
 
 const Hero = () => {
-    return ( 
-        <ContenedorHero>
-            <Menu />
-        </ContenedorHero>    
+    return (
+        <>
+            <ContenedorHero>
+                <Menu />
+                <h1>Texto Aquí!</h1>
+            </ContenedorHero>
+        </>
     );
 }
- 
+
 export default Hero;

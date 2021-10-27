@@ -1,13 +1,17 @@
 import React from 'react';
 import Header from './components/layout/Header';
 import MenuState from './context/menu/menuState';
+import Main from './components/layout/Main';
 
 function App() {
 
   return (
-    <MenuState>
-      <Header />
-    </MenuState>
+    <>
+      <MenuState>
+        <Header />
+      </MenuState>
+      <Main/>
+    </>
   );
 }
 

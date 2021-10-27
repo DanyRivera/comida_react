@@ -2,18 +2,6 @@ import React, { useContext } from 'react';
 import styled from '@emotion/styled';
 import MenuContext from '../../context/menu/menuContext';
 
-const ContenedorSidebar = styled.div`
-    background-color: var(--primario);
-    position: absolute;
-    width: 70%;
-    height: 100vh;
-    z-index: 1;
-
-    @media (min-width: 768px) {
-        display: none;
-    }
-`;
-
 const CloseMenu = styled.div`
     display: flex;
     justify-content: flex-end;
@@ -40,11 +28,11 @@ const ListadoOpciones = styled.div`
 
 const Sidebar = () => {
 
-    const { ocultarMenu } = useContext(MenuContext);
+    const { ocultarMenu, activo } = useContext(MenuContext);
 
     return (
 
-        <ContenedorSidebar>
+        <div className={activo ? 'sidebar active' : 'sidebar'}>
             <CloseMenu>
                 <button
                     onClick={() => ocultarMenu()}
@@ -59,7 +47,7 @@ const Sidebar = () => {
                     <li>Contacto</li>
                 </ul>
             </ListadoOpciones>
-        </ContenedorSidebar>
+        </div>
     );
 }
 

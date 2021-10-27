@@ -28,9 +28,11 @@ a {
 }
 
 h1,h2,h3 {
+  margin: 0;
 }
 
 p {
+  margin: 0;
 }
 
 img {
@@ -45,3 +47,23 @@ button {
 
 
 /*Animaciones*/
+.sidebar {
+  background-color: var(--primario);
+  position: absolute;
+  width: 70%;
+  height: 100vh;
+  left: -100%;
+  transition: all .6s;
+  z-index: 3;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+@media (min-width: 768px) {
+
+  .sidebar {
+    display: none;
+  }
+}

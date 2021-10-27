@@ -1,21 +1,19 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import MovilMenu from '../ui/MovilMenu';
 import Sidebar from '../ui/Sidebar';
 import styled from '@emotion/styled';
-import MenuContext from '../../context/menu/menuContext';
 
 const ContenedorMenus = styled.header`
     position: absolute;
     width: 100%;
+    z-index: 2;
 `;
 
 const Menu = () => {
 
-    const {activo} = useContext(MenuContext);
-
     return ( 
         <>
-            { activo && <Sidebar /> }
+            <Sidebar/>
             <ContenedorMenus>
                 <MovilMenu />
             </ContenedorMenus>
