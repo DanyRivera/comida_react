@@ -49,7 +49,7 @@ button {
 /*Animaciones*/
 .sidebar {
   background-color: var(--primario);
-  position: absolute;
+  position: fixed;
   width: 70%;
   height: 100vh;
   left: -100%;

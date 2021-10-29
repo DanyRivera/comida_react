@@ -16,11 +16,13 @@ const ContenedorMenu = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    border-radius: 15px;
+
 `;
 
 const ContenidoMenu = styled.ul`
 
-    padding: 3.5rem 0;
+    padding: 4.5rem 0;
 
     li {
         display: flex;
@@ -28,11 +30,20 @@ const ContenidoMenu = styled.ul`
         justify-content: space-around;
         align-items: center;
         font-size: 1.8rem;
+        padding-bottom: 4rem;
+
+        @media (min-width: 768px) {
+            font-size: 2.3rem;
+        }
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
     }
 `;
 
 const MenuMain = () => {
-    return ( 
+    return (
         <ContenedorMain>
             <h2>Menu</h2>
 
@@ -43,11 +54,51 @@ const MenuMain = () => {
                         <p>.....................</p>
                         <p>Precio$$$</p>
                     </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
+                    <li>
+                        <p>Nombre platillo</p>
+                        <p>.....................</p>
+                        <p>Precio$$$</p>
+                    </li>
                 </ContenidoMenu>
             </ContenedorMenu>
 
         </ContenedorMain>
-     );
+    );
 }
- 
+
 export default MenuMain;
