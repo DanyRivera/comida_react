@@ -9,6 +9,7 @@ const UpScroll = styled.div`
     bottom: 2.5%;
     right: 3%;
     z-index: 2;
+    outline: none;
 
     button {
         background-color: #e1e1e1;
@@ -19,6 +20,7 @@ const UpScroll = styled.div`
         box-shadow: 0px 2px 12px -2px rgba(0,0,0,0.74);
         transition: all .5s ease;
         cursor: pointer;
+        outline: none;
     }
     i {
         font-size: 2rem;
