@@ -3,10 +3,13 @@ import styled from '@emotion/styled';
 
 const ContenedorMain = styled.div`
 
+    padding: 0 2rem;
+
     h2 {
         margin: 4rem 0 2.2rem 0;
         text-align: center;
-        font-size: 3.5rem;
+        font-size: 4.7rem;
+        font-family: "Caveat", cursive;
     }
 `;
 
@@ -22,7 +25,7 @@ const ContenedorMenu = styled.div`
 
 const ContenidoMenu = styled.ul`
 
-    padding: 4.5rem 0;
+    padding: 4.5rem 1.2rem;
 
     li {
         display: flex;
@@ -31,6 +34,7 @@ const ContenidoMenu = styled.ul`
         align-items: center;
         font-size: 1.8rem;
         padding-bottom: 4rem;
+        font-family: 'Kalam', cursive;
 
         @media (min-width: 768px) {
             font-size: 2.3rem;

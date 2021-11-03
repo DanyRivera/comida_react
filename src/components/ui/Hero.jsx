@@ -22,7 +22,7 @@ const ContenedorHero = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0,0,0, .6);
+        background-color: rgba(0,0,0, .7);
         position: absolute;
     }
 
@@ -34,9 +34,18 @@ const ContenedorHero = styled.div`
         width: 100%;
         justify-content: center;
         color: var(--primario);
-        font-size: 5rem;
+        font-size: 6.5rem;
+        padding: 0 1.2rem;
+        font-weight: 700;
         position: absolute;
         z-index: 1;
+        font-family: "Caveat", sans-serif;
+        text-align: center;
+
+        @media (min-width: 768px) {
+            font-size: 8rem;
+            padding: 7.5rem 0 0 0;
+        }
     }
 `;
 
@@ -45,7 +54,7 @@ const Hero = () => {
         <>
             <ContenedorHero>
                 <Menu />
-                <h1>Texto Aquí!</h1>
+                <h1>Taquería "Cristo Rey"</h1>
             </ContenedorHero>
         </>
     );

@@ -21,11 +21,11 @@ const ContenidoDesktopMenu = styled.ul`
     justify-content: space-between;
     width: 65%;
 
-    li {
-        color: #fff;
-        font-size: 2.5rem;
+    a {
+        font-size: 3.3rem;
         color: var(--primario);
         cursor: pointer;
+        font-family: "Caveat", cursive;
     }
 `;
 
@@ -38,7 +38,7 @@ const DesktopMenu = () => {
                         to="menu"
                         smooth={true}
                         duration={1000}
-                        offset={-100}
+                        offset={-50}
                     >Menu</Link>
                 </li>
                 <li>

@@ -12,7 +12,10 @@ const ContenidorFooter = styled.footer`
 
     p {
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        font-family: "Caveat", sans-serif;
+        font-weight: 700;
+        color: #fff;
     }
 `;
 

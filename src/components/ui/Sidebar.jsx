@@ -11,6 +11,7 @@ const CloseMenu = styled.div`
     i {
         color: #fff;
         font-size: 2.5rem;
+        cursor: pointer;
     }
 `;
 
@@ -21,9 +22,11 @@ const ListadoOpciones = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1.5rem 0 1.5rem 2.2rem;
-        font-size: 2rem;
+        padding: 2.2rem 0 1.5rem 2.2rem;
+        font-size: 3rem;
         color: #fff;
+        font-family: "Caveat", sans-serif;
+        cursor: pointer;
     }
 `;
 

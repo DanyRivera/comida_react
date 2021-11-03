@@ -22,6 +22,7 @@ const ContenidoMovilMenu = styled.div`
     i {
         color: var(--primario);
         font-size: 2.5rem;
+        cursor: pointer;
     }
 `;
 
@@ -40,7 +41,11 @@ const MovilMenu = () => {
                         <i className="fas fa-bars"></i>
                     </button>
                     <button>
-                        <i className="fab fa-facebook"></i>
+                        <a
+                            href="https://www.facebook.com/Taqueria-Cristo-Rey-305266880077678/?ref=page_internal"
+                            target="_blank"
+                            rel="noreferrer"
+                        ><i className="fab fa-facebook"></i></a>
                     </button>
                 </ContenidoMovilMenu>
             </Contenedor>
