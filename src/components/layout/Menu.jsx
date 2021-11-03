@@ -2,6 +2,7 @@ import React from 'react';
 import MovilMenu from '../ui/MovilMenu';
 import Sidebar from '../ui/Sidebar';
 import styled from '@emotion/styled';
+import DesktopMenu from '../ui/DesktopMenu';
 
 const ContenedorMenus = styled.header`
     position: absolute;
@@ -17,6 +18,7 @@ const Menu = () => {
             <ContenedorMenus>
                 <MovilMenu />
             </ContenedorMenus>
+            <DesktopMenu />
         </>
     );
 }

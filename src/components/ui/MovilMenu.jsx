@@ -7,6 +7,8 @@ const ContenedorMovilMenu = styled.div`
 
     border-bottom: solid 2px var(--primario);
     padding: 1rem;
+    /* position: fixed; */
+    width: 100%;
 
     @media (min-width: 768px) {
         display: none;

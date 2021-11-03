@@ -6,13 +6,14 @@ import { Contenedor } from '../ui/Reutilizable';
 
 const ContenedorMain = styled.main`
     display: grid;
+    margin: 0 auto 5rem auto;
     grid-template-columns: 100%;
-    margin-bottom: 5rem;
 
     @media (min-width: 768px) {
         grid-template-columns: repeat(2, 50%);
         align-items: center;
-        gap: 5rem;
+        text-align: center;
+        margin-bottom: 10rem;
     }
 `;
 

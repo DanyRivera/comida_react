@@ -12,7 +12,7 @@ const ContenedorImagenes = styled.div`
         margin-top: 3.5rem;
 
         img {
-            width: 75%;
+            width: 70%;
             height: auto;
             border-radius: 10px;
         }

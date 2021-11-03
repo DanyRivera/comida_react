@@ -15,9 +15,9 @@ const ContenedorMenu = styled.div`
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     border-radius: 15px;
-
+    padding-bottom: 5rem;
 `;
 
 const ContenidoMenu = styled.ul`
@@ -44,7 +44,9 @@ const ContenidoMenu = styled.ul`
 
 const MenuMain = () => {
     return (
-        <ContenedorMain>
+        <ContenedorMain
+            id="menu"
+        >
             <h2>Menu</h2>
 
             <ContenedorMenu>

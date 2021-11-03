@@ -15,6 +15,7 @@ body {
   line-height: 1.5;
   margin: 0;
   position: relative;
+  overflow-x: hidden;
 }
 
 ul {
@@ -45,6 +46,12 @@ button {
   outline: none;
 }
 
+.heading-seccion {
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 3.2rem;
+}
 
 /*Animaciones*/
 .sidebar {
@@ -66,4 +73,105 @@ button {
   .sidebar {
     display: none;
   }
+}
+
+/*Cards*/
+
+.card-contacto {
+  background-image: url(./assets/img/telefono.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  border-radius: 4%;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.card-direccion {
+  background-image: url(./assets/img/direccion.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  border-radius: 4%;
+  cursor: pointer;
+  transition: all .5s ease;
+
+}
+
+.card-horarios {
+  background-image: url(./assets/img/horarios.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  border-radius: 4%;
+  cursor: pointer;
+  transition: all .5s ease;
+
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0, .7);
+  border-radius: 4%;
+  transition: all .5s ease-out;
+  opacity: 0;
+}
+
+.content-card h3 {
+  color: #fff;
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+}
+
+.content-card p {
+  font-size: 2rem;
+  color: #fff;
+  padding: 0 2rem;
+}
+
+.content-card li {
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 0;
+}
+
+.info-contacto li {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.info-contacto span {
+  font-weight: bold;
+}
+
+.card-contacto:hover .content-card {
+  opacity: 1;
+}
+
+.card-contacto:hover{
+  transform: scale(1.1);
+}
+
+.card-direccion:hover .content-card {
+  opacity: 1;
+}
+
+.card-direccion:hover{
+  transform: scale(1.1);
+}
+
+.card-horarios:hover .content-card {
+  opacity: 1;
+}
+
+.card-horarios:hover{
+  transform: scale(1.1);
 }

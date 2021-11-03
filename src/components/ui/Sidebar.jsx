@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import styled from '@emotion/styled';
+import { Link } from 'react-scroll';
 import MenuContext from '../../context/menu/menuContext';
 
 const CloseMenu = styled.div`
@@ -42,9 +43,30 @@ const Sidebar = () => {
             </CloseMenu>
             <ListadoOpciones>
                 <ul>
-                    <li>Menu</li>
-                    <li>Ubicación</li>
-                    <li>Contacto</li>
+                    <li>
+                        <Link
+                            to="menu"
+                            smooth={true}
+                            duration={1000}
+                            offset={-100}
+                        >Menu</Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="ubicacion"
+                            smooth={true}
+                            duration={1000}
+                            offset={-100}
+                        >Ubicación</Link>
+                    </li>
+                    <li>
+                        <Link
+                            to="contacto"
+                            smooth={true}
+                            duration={1000}
+                            offset={-100}
+                        >Contacto</Link>
+                    </li>
                 </ul>
             </ListadoOpciones>
         </div>
