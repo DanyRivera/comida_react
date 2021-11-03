@@ -28,7 +28,7 @@ const Footer = () => {
         <ContenedorFooter>
             <Contenedor>
                 <ContenidorFooter>
-                    <p>&copy; {Current} La Tabasqueña, Todos los derechos Reservados</p>
+                    <p>&copy; {Current} Taquería Cristo Rey, Todos los derechos Reservados</p>
                 </ContenidorFooter>
             </Contenedor>
         </ContenedorFooter>
